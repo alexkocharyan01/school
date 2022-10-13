@@ -1,0 +1,141 @@
+@import "../../../../../App";
+
+.profile_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7vh;
+  padding: 0 30px 30px 30px;
+  .changes {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 1.2vh 0;
+    height: 4vh;
+
+    .withEditIcon{
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      @media(max-width:450px){
+        width: 100%;
+      }
+    }
+
+    input{
+      background: none;
+      border: none;
+      font-size: 16px;
+      width: 90%;
+    }
+    .input {
+      @include input_text();
+      width: 90%;
+    }
+    h3 {
+      font-size: 16px;
+      line-height: 19px;
+      width: 30%;
+      @media(max-width:450px){
+        padding-bottom: 4px;
+      }
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #636363;
+      width: 70%;
+    }
+    .button_block {
+      width: 10%;
+      text-align: right;
+      button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3DAFFF;
+      }
+      @media(max-width:500px){
+        width: auto;
+      }
+    }
+
+    @media(max-width:800px){
+      width: 90%;
+    }
+    @media(max-width:500px){
+      width: 98%;
+    }
+    @media(max-width:450px){
+      flex-direction: column;
+      width: 94%;
+      align-items: flex-start;
+      height: auto;
+      padding-top: 6px;
+    }
+  }
+  .save {
+    margin-top: 10px;
+    background: #3398DF;
+    border-radius: 6px;
+    border: none;
+    padding: 12px 50px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  .edit_name_lastname{
+    .edit_container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      button{
+        background: none;
+        border: none;
+        color: #3DAFFF;
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+      }
+    }
+    input {
+      @include input_text();
+      width: 30%;
+      font-size: 20px;
+      padding: 10px;
+    }
+    .name_lastName{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+
+      .editIcon{
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding-left: 20px;
+      }
+      p{
+        font-size: 24px;
+      }
+      @media(max-width:700px){
+        padding-bottom: 20px;
+      }
+    }
+  }
+  @media(max-width:700px){
+    padding: 0 10px 30px ;
+  }
+  @media(max-width:700px){
+    margin-top: 12vh;
+  }
+}

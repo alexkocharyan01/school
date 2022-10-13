@@ -1,0 +1,175 @@
+.time {
+  height: 25.4vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(91.73deg, rgba(120, 250, 233, 0.7) 15.08%, rgba(113, 196, 252, 0.7) 98.53%);
+  backdrop-filter: blur(30px);
+  border-radius: 0 23px;
+
+  .join_to_class {
+    color: #FFFFFF;
+    height: 25.4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+    .first {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .icon {
+        height: 70px;
+        width: 70px;
+
+        .back-circle {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: rgba(255, 255, 255, 0.2);
+          opacity: 0;
+          border-radius: 8px;
+          animation: back 2s infinite;
+          animation-delay: 0.3s;
+        }
+
+        .button {
+          position: absolute;
+          height: 70px;
+          width: 70px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 8px;
+          background-color: rgba(255, 255, 255, 0.2);
+          animation: ring 2s infinite;
+        }
+
+        .phone {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 55px;
+          color: #ffffff;
+          animation: call 2s infinite;
+        }
+
+        .front-circle {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #fff;
+          opacity: 0.2;
+          border-radius: 8px;
+          width: 0px;
+          height: 0px;
+          animation: breath 2s infinite;
+        }
+
+        @keyframes back {
+          0%{
+            height: 0px;
+            width: 0px;
+          }
+          50%{
+            height: 50px;
+            width: 50px;
+            opacity: 0.4;
+          }
+          70%{
+            height: 100px;
+            width: 100px;
+            opacity: 0.1;
+          }
+          100%{
+            height: 130px;
+            width: 130px;
+            opacity: 0;
+          }
+        }
+
+        @keyframes ring {
+          0%{}
+          50%{
+            height: 85px;
+            width: 85px;
+          }
+        }
+
+        @keyframes breath {
+          0%{}
+          50%{
+            width: 100px;
+            height: 100px;
+          }
+          100%{}
+        }
+
+        @keyframes svgg {
+          0%{}
+          50%{
+            opacity: 0.2;
+          }
+          100%{}
+        }
+
+        svg {
+          opacity: 1;
+          font-size: 45px;
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: svgg 1s infinite;
+        }
+      }
+    }
+  }
+
+  .date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      font-family: "Roboto";
+      font-weight: normal;
+      font-size: 60px;
+      color: #FFFFFF;
+      @media(max-width: 1450px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .day {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    padding-top: 3vh;
+
+    p {
+      font-family: "Roboto";
+      color: #F4F4F4;
+    }
+  }
+  @media(max-width:1150px){
+    height: 22vh;
+  }
+}

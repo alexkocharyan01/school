@@ -1,0 +1,46 @@
+.radio{
+  width: 100%;
+
+  p{
+    display: inline-block;
+    color: #3398DF;
+    padding: 2vh 0 1vh 0;
+    font-size: 16px;
+
+    span{
+      color: red;
+      font-size: 16px;
+    }
+  }
+
+  .radio_flex {
+    display: flex;
+    justify-content: space-between;
+
+    .radio_block {
+      width: 46%;
+      border-radius: 4px;
+      display: flex;
+      border: none;
+      padding: 0 4%;
+      background: #ffffff;
+      justify-content: space-between;
+      align-items: center;
+      height: 4.5vh;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.14);
+
+      label{
+        display: inline-block;
+        color: #959595;
+        font-size: 16px;
+        text-transform: capitalize;
+
+      }
+
+      input{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

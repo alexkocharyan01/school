@@ -1,0 +1,102 @@
+.moderatorteachertable_cangephon_number {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  input {
+    width: 60%;
+    border: none;
+    border-bottom: solid 1px #9fb6d8;
+    background: none;
+    padding: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: #3d7ddc;
+    width: 40px;
+    cursor: pointer;
+  }
+}
+
+.moderatorteachertable_gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  select {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.moderatorteachertable_label {
+  display: flex;
+  height: 2vh;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.moderatorteachertable_unader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.set_meeting {
+  height: 40px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .join_to_meeting {
+    background-color: rgb(79, 162, 245);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+}
+
+.moderator_pagenation {
+  background-color: #BCd4dB;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  .select {
+    background: none;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .next {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .prev {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}

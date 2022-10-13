@@ -1,0 +1,35 @@
+.admin_delete_button{
+  background: none;
+  border: none;
+  color: #E10000;
+  cursor: pointer;
+  &:hover{
+    color: #9f2424;
+  }
+}
+
+.admin_pagination{
+  background-color: #BCd4dB;
+  padding:20px;
+  display: flex;
+  justify-content: flex-end;
+
+  .select{
+    background: none;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .next{
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .prev{
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,207 @@
+@import "../../../App";
+
+.register_student {
+
+  .right {
+    @include right_block();
+
+    .right_container {
+      width: 80%;
+
+      .log_in_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5vh;
+
+        img{
+          @media(max-width: 500px){
+            width: 50px;
+          }
+        }
+        .log_in {
+          background: transparent;
+          border: solid 1px #3398DF;
+          color: #3398DF;
+          width: 15%;
+          border-radius: 10px;
+          transition: 0.3s all;
+
+          &:hover {
+            background: #3398DF;
+            color: #ffffff;
+            transition: 0.3s all;
+          }
+          @media(max-width: 700px){
+            width: 20%;
+          }
+          @media(max-width: 500px){
+            width: 30%;
+          }
+        }
+        @media(max-width: 500px){
+          margin-top: 4vh;
+        }
+      }
+
+      h3 {
+        @include register_title();
+      }
+
+      .flex_input {
+        display: flex;
+        justify-content: space-between;
+
+        .input_block {
+          width: 48%;
+
+          .input {
+            position: relative;
+
+            label {
+              @include input_label();
+            }
+
+            input {
+              @include input_text();
+            }
+
+            .show_hide {
+              position: absolute;
+              right: 10px;
+              top: 62%;
+              cursor: pointer;
+
+              svg {
+                width: 20px;
+
+                path {
+                  fill: #959595;
+                }
+              }
+            }
+
+            .error {
+              @include error();
+            }
+          }
+
+          .radio {
+            width: 100%;
+
+            p {
+              display: inline-block;
+              color: #3398DF;
+              padding: 2vh 0 1vh 0;
+              font-size: 16px;
+
+              span {
+                color: red;
+                font-size: 16px;
+              }
+            }
+
+            .radio_flex {
+              display: flex;
+              justify-content: space-between;
+
+              .radio_block {
+                width: 46%;
+                border-radius: 4px;
+                display: flex;
+                border: none;
+                padding: 0 4%;
+                background: #ffffff;
+                justify-content: space-between;
+                align-items: center;
+                height: 4.5vh;
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.14);
+
+                label {
+                  display: inline-block;
+                  color: #959595;
+                  font-size: 16px;
+                  text-transform: capitalize;
+
+                  @media(max-width: 1450px){
+                    font-size: 15px;
+                  }
+
+                }
+
+                input {
+                  width: 18px;
+                  height: 18px;
+
+                  @media(max-width: 1450px){
+                    width: 16px;
+                    height: 16px;
+                  }
+                }
+
+                &.error {
+                  @include error();
+                }
+              }
+            }
+          }
+          @media(max-width: 700px){
+            width: 100%;
+            margin-bottom: 15px;
+          }
+        }
+        @media(max-width: 700px){
+          flex-direction: column;
+        }
+      }
+
+      .register_button {
+        margin-top: 4vh;
+        margin-bottom: 3.5vh;
+
+        .register_btn {
+          @include btn();
+
+          &:hover {
+            background: transparent;
+            color: #3398DF;
+            transition: 0.3s all;
+          }
+        }
+      }
+
+      .request {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #3398DF;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        span {
+          font-size: 11px;
+        }
+        @media(max-width:700px){
+          margin-bottom: 30px;
+        }
+      }
+
+      @media(max-width:1600px){
+        width: 90%;
+      }
+    }
+    @media(max-width: 1100px){
+      width: 90%;
+      border-radius: 50px;
+    }
+    @media(max-width: 700px){
+     margin: 50px 0;
+    }
+    @media(max-width: 500px){
+      border-radius: 30px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.homeworks{
+  .homeworks_page{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 46px;
+    .homeworks_container{
+      margin-top: 4vh;
+    }
+  }
+}

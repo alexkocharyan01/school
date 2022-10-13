@@ -1,0 +1,79 @@
+@import "../../../../App";
+
+.header_container{
+  padding-top: 20px;
+}
+.makeStyles-dialog-1 {
+  height: 85vh!important;
+  max-width: 500px !important;
+}
+.moderator_dialog_header{
+  p{
+    color: #3398DF;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+.dialog_content{
+  
+  .dialog_content_person_info{
+    label{
+      color: #3398DF;
+    }
+  }
+  .input{
+    @include input_text;
+  }
+
+  .add_teacher_gender{
+  .choose_gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10vh 0 10vh;
+    
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  p{
+    color: #3398DF;
+  }
+  }
+
+  .dialog_password{
+    position: relative;
+
+    .add_password{
+      position: relative;
+
+      div{
+        position: absolute;
+        width: 4vh;
+        right: 0vh;
+      }
+    }
+  }
+
+  .moderator_content_button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    button{
+      @include btn();
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 5px 20px;
+      width: 120px;
+      &:hover {
+        background: transparent;
+        color: #3398DF;
+        transition: 0.3s all;
+      }
+    }
+  }
+}

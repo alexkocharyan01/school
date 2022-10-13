@@ -1,0 +1,147 @@
+.chat_home {
+  display: flex;
+  flex-direction: column;
+
+  .chat_home_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+
+    .icon {
+      cursor: pointer;
+    }
+
+    .chat_home_title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+  }
+
+  .chat_home_scrollbar {
+    height: 55vh;
+    overflow-y: auto;
+
+    .person_list {
+      height: 50vh;
+
+      .persons_list_container {
+        width: 95%;
+        margin: 0 auto 1.8vh;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgb(231, 231, 231);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(45deg, #18E4E9 0%, #3D7DDC 100%);
+    }
+
+    .people_chat {
+      margin-bottom: 2vh;
+      align-items: center;
+      height: 6.6vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: rgba(248, 248, 248, 0.6);
+
+      .avatar {
+        width: 44px;
+        height: 44px;
+        border: 2px solid #71C4FC;
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin-left: 1.3vh;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .person_info {
+        display: flex;
+        align-items: center;
+
+        .person_name {
+          margin-left: 2vh;
+
+          h3 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 12px;
+            color: #000000;
+          }
+
+          p {
+            margin-top: 6px;
+            font-family: "Roboto";
+            // font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            // line-height: 8px;
+            color: #707070;
+          }
+        }
+
+      }
+    }
+
+    .chat_date {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      margin-right: 2vh;
+      align-items: flex-end;
+
+      p {
+        font-family: "Roboto";
+        // font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        // line-height: 7px;
+        color: #b0abab;
+      }
+
+      .message_count {
+        display: flex;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #78FAE9 0%, #71C4FC 100%);
+
+        p {
+          margin-top: 1px;
+          font-family: "Roboto";
+          // font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          // line-height: 6px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

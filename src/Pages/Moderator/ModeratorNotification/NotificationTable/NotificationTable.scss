@@ -1,0 +1,29 @@
+.do_it{
+  display: flex;
+  justify-content: center;
+
+  button{
+    padding: 0.3vh 0.7vh 0.3vh 0.7vh;
+    background-color: rgb(1, 180, 152);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.message{
+  display: flex;
+  justify-content: center;
+
+  button{
+    padding: 0.3vh 0.7vh 0.3vh 0.7vh;
+    background-color: rgb(235, 203, 16);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}

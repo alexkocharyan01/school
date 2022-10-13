@@ -1,0 +1,98 @@
+.video {
+  padding: 46px;
+  display: flex;
+  justify-content: space-between;
+
+  .video_page {
+    width: 78%;
+    height: 75vh;
+    position: relative;
+
+    .local_participant {
+      display: flex;
+      width: 13vw;
+      // height: 20vh;
+      position: absolute;
+      right: 3%;
+      top: 4%;
+
+      video {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
+
+    .remote_participants {
+      height: 100%;
+
+      .participant {
+        height: 100%;
+
+        video {
+          width: 100% !important;
+          height: auto ;
+          border-radius: 45px;
+        }
+      }
+    }
+
+    .video_buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 88;
+      margin-top: 10px;
+
+      .video_btn {
+        // width: 80px;
+        text-align: center;
+        margin: 0 19px;
+
+        .video_icon {
+          width: 65px;
+          height: 65px;
+          background: rgb(85, 85, 85);
+          // backdrop-filter: blur(20px);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 18px;
+
+          &.disable_icon {
+            background: #E10000;
+          }
+
+          &.end_call {
+            background: #E10000;
+          }
+
+          &.share_screen {
+            background: #0f509e;
+          }
+        }
+
+        span {
+          color: #707070;
+        }
+      }
+    }
+  }
+
+  .chat_pages{
+  
+    // backdrop-filter: blur(40px);
+    background: rgba(204, 204, 204, 0.49);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    width: 20%;
+    padding-top: 20px;
+    // height: 75vh;
+
+    .messages_component{
+      height: 55vh;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.moderatorstudentstable_cangephon_number {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  input {
+    width: 60%;
+    border: none;
+    border-bottom: solid 1px #9fb6d8;
+    background: none;
+    padding: 5px;
+    &:focus{
+      outline: none;
+    }
+  }
+  button{
+    background: none;
+    border: none;
+     color: #3d7ddc;
+     width: 40px;
+     cursor: pointer;
+     // font-size: 10px;
+   }
+ }
+
+.moderatorstudentstable_gender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  select{
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    option{
+      padding: 5px !important;
+      border: none !important;
+    }
+  }
+}
+
+.moderatorstudentstable_label{
+  display: flex;
+  height: 2vh;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.moderatorstudentstable_unader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.set_meeting {
+  height: 40px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .join_to_meeting{
+    background-color: rgb(79, 162, 245);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+}
+
+.delete_teacher{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .delete_icon{
+    background: none;
+    border: none;
+    color: #E10000;
+    width: 40px;
+    cursor: pointer;
+
+    &:hover{
+      color: #9f2424;
+    }
+  }
+}
+
+.moderator_student_pagenation {
+  background-color: #BCd4dB;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  .select_student {
+    background: none;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .next_student {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .prev_student {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}

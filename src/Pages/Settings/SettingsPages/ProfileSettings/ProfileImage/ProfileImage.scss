@@ -1,0 +1,97 @@
+@import "../../../../../App";
+
+.profile_image{
+  width: 100%;
+  position: relative;
+  .background_image{
+    img{
+      width: 100%;
+      height: 26.7vh;
+      border-radius: 23px 23px 0 0;
+
+        @media(max-width:700px){
+          border-radius: 0;
+      }
+    }
+  }
+}
+
+.change_background_image{
+  top: 40px;
+  right: 60px;
+  position: absolute;
+  z-index: 1;
+  button{
+    @include btn();
+    padding: 8px 14px;
+        &:hover {
+        background: transparent;
+        color: #3398DF;
+        transition: 0.3s all;
+        background-color: rgb(250, 245, 245);
+    }
+    p{
+      font-family: "Roboto";
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 13px;
+    }
+    @media(max-width:450px){
+      padding:6px 12px;
+    }
+  }
+  @media(max-width:700px){
+    right: 40px;
+  }
+  @media(max-width:500px){
+    right: 20px;
+  }
+}
+.profile_picture_container{
+  align-items: center;
+  position: absolute;
+  bottom: -3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  img{
+    width: 120px;
+    height: 120px;
+    border:  3px solid #3DAFFF;
+    border-radius: 50%;
+  }
+
+  .change_prifail_img{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    .edit{
+      position: absolute;
+      left: 55px;
+      top: -37px;
+      background: none;
+      border: none;
+      color: #4f5052;
+      font-family: "Roboto";
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      cursor: pointer;
+    }
+
+    .change_image_input{
+      display: none;
+    }
+
+    .remove{
+      background: none;
+      border: none;
+      color: #3DAFFF;
+      font-family: "Roboto";
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      cursor: pointer;
+    }
+  }
+}

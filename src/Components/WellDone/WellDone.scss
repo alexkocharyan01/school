@@ -1,0 +1,55 @@
+@import "../../App";
+
+.well_done {
+
+  .well_done_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+      @media(max-width: 900px) {
+        width: 200px;
+      }
+    }
+
+    h3 {
+      font-size: 48px;
+      color: #3398DF;
+      margin-top: 5vh;
+      @media(max-width: 600px) {
+        font-size: 40px;
+      }
+    }
+
+    h4 {
+      font-size: 30px;
+      color: #FFFFFF;
+      margin-top: 3vh;
+      @media(max-width: 600px) {
+        font-size: 24px;
+      }
+      @media(max-width: 400px) {
+        font-size: 18px;
+      }
+    }
+
+    .well_done_btn {
+      @include btn();
+      width: 140px;
+      margin-top: 3vh;
+      @media(max-width: 900px) {
+        margin-top: 6vh;
+      }
+
+      &:hover {
+        background: transparent;
+        color: #FFFFFF;
+        transition: 0.3s all;
+        border: solid 1px #FFFFFF;
+      }
+    }
+  }
+}

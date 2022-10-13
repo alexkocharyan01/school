@@ -1,0 +1,37 @@
+.inputs{
+
+  label{
+    display: inline-block;
+    color: #3398DF;
+    padding: 2vh 0 1vh 0;
+    font-size: 16px;
+
+    span{
+      color: red;
+      font-size: 16px;
+    }
+  }
+
+  input{
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    height: 4.5vh;
+    width: 100%;
+    color: #191919;
+    font-size: 16px;
+    text-indent: 2%;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.14);
+
+    &::placeholder {
+      color: #959595;
+    }
+  }
+
+  .error{
+    border: 1px solid #f5c6cb;
+    box-shadow: 0px 0px 6px rgba(255, 0, 0, 50%);
+  }
+}

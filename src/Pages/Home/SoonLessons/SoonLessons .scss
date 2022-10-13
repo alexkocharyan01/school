@@ -1,0 +1,128 @@
+.persons_lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // margin: 1.7vh;
+  height: 27vh;
+
+  h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 18px;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+
+  // h3{
+  //   font-family: "Roboto";
+  //   font-style: normal;
+  //   font-weight: normal;
+  //   font-size: 13px;
+  //   line-height: 15px;
+  // }
+
+  .person_container {
+    width: 100%;
+    // padding-right: 1.1vh;
+  }
+
+  .person_scroll {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgb(231, 231, 231);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(45deg, #18E4E9 0%, #3D7DDC 100%);
+    }
+  }
+
+  .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 1vh;
+    display: flex;
+    border-radius: 12px;
+    border: 0.3px solid #D3D4D3;
+    height: 5.5vh;
+
+    .person_name {
+      display: flex;
+      align-items: center;
+
+      div {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+      }
+
+      h3 {
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: 15px;
+        color: #636363;
+        padding-bottom: 2px;
+      }
+
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #FFFFFF;
+      }
+
+      .person_img {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        border: 2px solid #78FAE9;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .dots {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        width: 4px;
+        height: 4px;
+        background: linear-gradient(180deg, #78FAE9 0%, #71C4FC 100%);
+        border-radius: 50%;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  button {
+    background: linear-gradient(180deg, #78FAE9 0%, #71C4FC 100%);
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 18px;
+
+    &:hover {
+      background: linear-gradient(180deg, #81f8e8 0%, #46aaec 100%);
+    }
+  }
+}

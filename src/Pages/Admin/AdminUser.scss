@@ -1,0 +1,88 @@
+.admin_user {
+  display: flex;
+  background-color: #d2dde6;
+  height: 100vh;
+
+  .admin_user_container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    // margin-top: 6vh;
+    // margin-left: 10vh;
+    // margin-right: 8vh;
+    width: 85%;
+    margin: 0 auto;
+
+    .search_moderators {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // margin-top: 3vh;
+      // padding-top: 20px;
+
+      h2{
+        margin-left: -80px;
+
+        @media(max-width: 1600px) {
+          margin-left: 0;
+        }
+      }
+
+      .search_moderators_container {
+        background-color: white;
+        display: flex;
+        padding: 1vh;
+        width: 40%;
+      }
+
+      .input_div {
+        width: 95%;
+        margin-left: 1vh;
+        border-bottom: 2px solid rgba(113, 196, 252, 0.445);
+
+        input {
+          border: none;
+          background: none;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .moderators_table {
+      position: relative;
+      margin-top: 8px;
+
+      .add_moderator {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 17px;
+        left: 20px;
+
+        button {
+          background-color: rgb(79, 162, 245);
+          padding: 0.2vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          cursor: pointer;
+          margin-right: 10px;
+
+          svg {
+            color: white;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.css-9zrfor-MuiPaper-root {
+  margin: 0 auto;
+}

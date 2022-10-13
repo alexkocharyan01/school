@@ -1,0 +1,13 @@
+.left_block {
+  width: 50%;
+  background-image: url("../../Assets/login_back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+
+  @media(max-width: 1100px){
+    display: none;
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../../App";
+
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .admin_dialog_button {
+    position: absolute;
+    right: 0;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.makeStyles-dialog-11 {
+  height: 85vh !important;
+  max-width: 500px !important;
+}
+
+.admin_dialog_header {
+  p {
+    color: #3398DF;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.dialog_content {
+  // width: 100%;
+
+  .dialog_content_person_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .dialog_content_password {
+      position: relative;
+
+      div {
+        display: flex;
+        width: 5px;
+        position: absolute;
+        bottom: 2px;
+        right: 23px;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1.4vh;
+    width: 100%;
+
+    label {
+      font-size: 16px;
+      margin-bottom: 0.4vh;
+    }
+
+    .input {
+      @include input_text;
+
+      // height: 3vh;
+      // border-radius: 7px;
+    }
+
+    select {
+      height: 3vh;
+      border-radius: 7px;
+    }
+  }
+
+  .dialog_content_button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 4vh;
+
+    button {
+      @include btn();
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 5px 20px;
+      width: 120px;
+
+      &:hover {
+        background: transparent;
+        color: #3398DF;
+        transition: 0.3s all;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.homeworks_select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+  .one {
+    width: 45%;
+  }
+
+  p {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+}

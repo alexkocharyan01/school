@@ -1,0 +1,131 @@
+@import "../../../App";
+
+.close_button {
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// .aa{
+//   background-color: #f0f6fa;
+//   height: 100%;
+// }
+// .teacher_more_info{background-color: red;}
+// #alert-dialog-slide-title{
+//   background-color: red;
+// }
+.show_info_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1vh 0;
+  height: 100%;
+
+  .teacher_header {
+    gap: 10%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 80%;
+    // width: 30%;
+    .info {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 154px;
+      height: 154px;
+      border-radius: 50%;
+      border: 3px solid #3297DD;
+    }
+
+    .teacher_name {
+      p {
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 32px;
+        color: #707070;
+      }
+    }
+
+    .choose_techer_date {
+      display: flex;
+      align-items: center;
+
+      .lesson_time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1vh;
+
+        .time_for_lesson, .working_days {
+          font-family: "Roboto";
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 12px;
+          color: #959595;
+          padding: 2px;
+        }
+
+        // .working_days{
+        //   font-family: "Roboto";
+        //   font-style: normal;
+        //   font-weight: normal;
+        //   font-size: 12px;
+        //   line-height: 7px;
+        //   color: #989898;
+        // }
+      }
+    }
+
+    .choose_me {
+      button {
+        @include btn();
+        // background: #3398DF;
+        // border-radius: 10px;
+        // border: none;
+        // padding: 1vh;
+        // cursor: pointer;
+        width: 100px;
+        height: 30px;
+        border-radius: 8px;
+        font-size: 15px;
+        margin-top: 5px;
+
+        &:hover {
+          background: transparent;
+          color: #3398DF;
+          transition: 0.3s all;
+        }
+
+        // p{
+        //   font-family: "Roboto";
+        //   font-weight: normal;
+        //   font-size: 15px;
+        //   line-height: 14px;
+
+        // }
+      }
+    }
+  }
+
+  .about_teacher {
+    margin-top: 30px;
+    text-align: center;
+
+    p {
+      color: #707070;
+      align-items: center;
+      font-family: "Roboto";
+      line-height: 1.5;
+    }
+  }
+}

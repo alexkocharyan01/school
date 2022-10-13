@@ -1,0 +1,71 @@
+.not_found {
+
+  .not_found_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    h2 {
+      font-weight: bold;
+      font-size: 190px;
+      line-height: 223px;
+      color: #3398DF;
+      font-family: Roboto;
+
+      @media(max-width: 1000px) {
+        font-size: 100px;
+        line-height: 100px;
+      }
+    }
+
+    h3 {
+      font-size: 90px;
+      line-height: 105px;
+      color: #FFFFFF;
+
+      @media(max-width: 1000px) {
+        font-size: 60px;;
+      }
+      @media(max-width: 700px) {
+        font-size: 40px;;
+      }
+      @media(max-width: 500px) {
+        font-size: 30px;;
+      }
+    }
+
+    .not_found_btn {
+      background: #3398DF;
+      color: #FFFFFF;
+      width: 10%;
+      border-radius: 6px;
+      border: solid 1px #3398DF;
+      transition: 0.3s all;
+      margin-top: 5vh;
+
+      &:hover {
+        background: transparent;
+        color: #FFFFFF;
+        transition: 0.3s all;
+        border: solid 1px #FFFFFF;
+      }
+
+      @media(max-width: 1000px) {
+        width: 17%;
+      }
+      @media(max-width: 700px) {
+        width: 22%;
+      }
+      @media(max-width: 500px) {
+        width: 28%;
+      }
+    }
+
+  }
+
+  @media(max-width: 700px) {
+    margin-top: 50px;
+  }
+}

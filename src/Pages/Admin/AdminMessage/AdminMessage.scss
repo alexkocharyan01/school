@@ -1,0 +1,35 @@
+.admin_message {
+  background-color: #899199;
+  display: flex;
+  width: 100%;
+
+  .admin_message_container {
+    width: 100%;
+    padding: 5vh;
+
+    .person_list {
+      height: 79vh;
+
+      img {
+        &.activeBorder {
+          border: 2px solid #71C4FC;
+        }
+      }
+    }
+
+    .messages_component {
+      height: 70vh;
+    }
+
+    .persons_list_container {
+      &:hover {
+        transform: scale(1.07);
+      }
+
+      &.active {
+        transform: scale(1.07);
+        background: #E6E6E7;
+      }
+    }
+  }
+}
